@@ -1,3 +1,0 @@
-$nome = $_GET['nome'];
-
-para chama no url coloca ?"nome da vairavel" se for mais de uma ?"nome da variavel" e o & com outro paramentro

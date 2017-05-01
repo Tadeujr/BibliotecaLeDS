@@ -1,1 +1,0 @@
-<?php include("cabecalho_adm.php")?>
