@@ -20,8 +20,11 @@
                     <a style="color:#F8F8FF;" href="locacao.php">Locação</a>
                 </ul>
                  <ul class="navbar navbar-brand">
+                    <a style="color:#F8F8FF;" href="devolucao.php">Devolução</a>
+                </ul>                                  
+                 <ul class="navbar navbar-brand">
                     <a style="color:#F8F8FF;" href="administrador.php">Administrador</a>
-                </ul>                                 
+                </ul>
     		</div>    		    		
     	</div>
     </div>

@@ -6,6 +6,7 @@
 		$livrox = filllivro($conexao, $id_user);
 		if($livrox != ""){
 			if(locarlivro($conexao, $livrox ,$idlivro, $id_user)){
+				situacao($conexao, $idlivro, 1);
 				echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=locacao.php'>";
 				echo "<label><b>OPERAÇÃO FEITA COM SUCESSO</b></label>";
 			}	
