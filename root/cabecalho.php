@@ -6,15 +6,11 @@
     <link href="css/loja.css" rel="stylesheet" />
 </head>
 
-<body >
-	<div style="background-color:#006400" class="navbar navbar-inverse navbar-fixed-top">
-    		<div class="container">
-    			<div class="navbar-header">
-    		<a style="color:#F8F8FF;" class="navbar-brand" href="index.php"> Home </a>
-    		</div>
+<body>
+	<div  class="navbar navbar-inverse navbar-fixed-top" style="background-color:#006400">
     		<div>
     			<ul class="navbar navbar-brand">
-    				<a style="color:#F8F8FF;" href="listalivros.php"> Livros </a>
+    				<a style="color:#F8F8FF;" href="index.php"> Livros </a>
     			</ul>
                  <ul class="navbar navbar-brand">
                     <a style="color:#F8F8FF;" href="locacao.php">Locação</a>
@@ -33,3 +29,6 @@
     <div class="container">
         <div class="principal">
     <!-- fim cabecalho.php -->
+    </div>
+    </div>
+</body>

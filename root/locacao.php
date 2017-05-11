@@ -2,19 +2,29 @@
 	include("conecta.php");
 	include("funcoes_biblioteca.php");?>
 
-<html>
-<h1>Locação</h1>
-<center><div class="formulario">
-	<form name="input" action="locacao.php" method="post">
-	<div id="conteudo-right">
-		<label class="title-form"> Id do usuario :<input type="text" name="id_user"></label><br>
-		<label class="title-form"> Id do livro :<input type="text" name="idlivro"></label><br>
+<form name="input" action="locacao.php" method="post">
+
+	<div class="title">
+		<h1>Locação</h1>
 	</div>
-     <button  style="background-color:#006400" class="btn btn-primary" type="submit"> Locar </button>
-</center></form>
-</html>
+
+	<div class="cont-L">
+		<label> Id do Usuário &nbsp&nbsp</label><br>
+		<label> Id do livro &nbsp&nbsp</label><br>
+	</div>
+
+	<div class="cont-R">
+		<input type="text" name="id_user"><br>
+		<input type="text" name="idlivro"><br>
+	</div>
+
+	<div class="divBtn">
+		<button style="background-color:#006400" class="btn btn-primary divBtn" type="submit">Locar</button>
+	</div>
+</form>
 
 <?php include("indentificacao.php"); ?>
 
 <?php 
 include ("rodape.php");?>
+
