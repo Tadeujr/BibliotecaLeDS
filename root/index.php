@@ -4,7 +4,7 @@
 
 
 	$livros = array();
-	$resultado = mysqli_query($conexao, "select * from livros");
+	$resultado = mysqli_query($conexao, "select * from livro");
 
 		while($livro = mysqli_fetch_assoc($resultado))
 		{
@@ -28,8 +28,8 @@
 <?php 
 	foreach ($livros as $livro){
 		echo "<tr>
-			<td>{$livro['id']}</td>
-			<td>{$livro['nome']}</td>
+			<td>{$livro['id_livro']}</td>
+			<td>{$livro['titulo']}</td>
 			<td>{$livro['autor']}</td>
 			<td>{$livro['editora']}</td>
 			<td>".if_locado($livro['situacao'])."</td>

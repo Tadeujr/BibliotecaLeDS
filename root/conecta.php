@@ -1,3 +1,3 @@
 <?php
-	$conexao = mysqli_connect('localhost','root','usbw','locador');
+	$conexao = mysqli_connect('localhost','root','usbw','biblioteca');
 ?>	

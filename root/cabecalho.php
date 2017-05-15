@@ -8,18 +8,18 @@
 
 <body>
 	<div  class="navbar navbar-inverse navbar-fixed-top" style="background-color:#006400">
-    		<div>
-    			<ul class="navbar navbar-brand">
-    				<a style="color:#F8F8FF;" href="index.php"> Livros </a>
+    		<div class="cor-menu">
+    			<ul class="navbar navbar-brand" >
+    				<a  href="index.php"> Livros </a>
     			</ul>
                  <ul class="navbar navbar-brand">
-                    <a style="color:#F8F8FF;" href="locacao.php">Locação</a>
+                    <a href="locacao.php">Locação</a>
                 </ul>
                  <ul class="navbar navbar-brand">
-                    <a style="color:#F8F8FF;" href="devolucao.php">Devolução</a>
+                    <a href="devolucao.php">Devolução</a>
                 </ul>                                  
                  <ul class="navbar navbar-brand">
-                    <a style="color:#F8F8FF;" href="administrador.php">Administrador</a>
+                    <a href="administrador.php">Administrador</a>
                 </ul>
     		</div>    		    		
     	</div>

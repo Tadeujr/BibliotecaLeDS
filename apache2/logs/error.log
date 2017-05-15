@@ -1,5 +1,5 @@
-[Thu May 11 17:51:12.372400 2017] [mpm_winnt:notice] [pid 9120:tid 780] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Thu May 11 17:51:12.372901 2017] [mpm_winnt:notice] [pid 9120:tid 780] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Thu May 11 17:51:12.372901 2017] [core:notice] [pid 9120:tid 780] AH00094: Command line: 'C:\\Users\\mathe\\Dropbox\\LEDS\\Libre\\BibliotecaLeDS/apache2/bin/httpd_usbwv8.exe -d C:/Users/mathe/Dropbox/LEDS/Libre/BibliotecaLeDS/apache2'
-[Thu May 11 17:51:12.381925 2017] [mpm_winnt:notice] [pid 9120:tid 780] AH00418: Parent: Created child process 11008
-[Thu May 11 17:51:13.117358 2017] [mpm_winnt:notice] [pid 11008:tid 808] AH00354: Child: Starting 64 worker threads.
+[Mon May 15 16:11:05.740701 2017] [mpm_winnt:notice] [pid 10076:tid 892] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Mon May 15 16:11:05.740701 2017] [mpm_winnt:notice] [pid 10076:tid 892] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Mon May 15 16:11:05.740701 2017] [core:notice] [pid 10076:tid 892] AH00094: Command line: 'C:\\Users\\Tadeu\\Documents\\GitHub\\BibliotecaLeDS/apache2/bin/httpd_usbwv8.exe -d C:/Users/Tadeu/Documents/GitHub/BibliotecaLeDS/apache2'
+[Mon May 15 16:11:05.742704 2017] [mpm_winnt:notice] [pid 10076:tid 892] AH00418: Parent: Created child process 13764
+[Mon May 15 16:11:06.975561 2017] [mpm_winnt:notice] [pid 13764:tid 884] AH00354: Child: Starting 64 worker threads.

@@ -7,7 +7,7 @@
 function insereLivro($conexao,$nome,$autor,$editora)// função para add livros no banco
 {
 
-		$query = "insert into livros (nome,autor,editora,situacao,locador) values('{$nome}','{$autor}','{$editora}','{0}', NULL)"; //comando para add no banco MYSQL 
+		$query = "insert into livro (titulo,autor,editora,situacao,locador) values('{$nome}','{$autor}','{$editora}','{0}', NULL)"; //comando para add no banco MYSQL 
 	
 	return mysqli_query($conexao,$query);
 }
