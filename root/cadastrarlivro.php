@@ -1,27 +1,16 @@
 <?php 
 include ("conecta.php");
 include("funcoes_biblioteca.php");
+require_once 'livroClass.php';
 ?>
 
 <?php 
+	$livro = new Livro;
+	$livro->titulo = $_POST['nome'];
+	$livro->autor = $_POST['autor'];
+	$livro->editora = $_POST['editora']; 
 
-	$nome = $_POST['nome'];
-	$autor = $_POST['autor'];
-	$editora = $_POST['editora']; 
-
-		
-		
-
-		if(insereLivro($conexao,$nome, $autor,$editora))
-		{
-			echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=listalivros.php'>";
-			echo "<label><b>Livro Cadastrado com Sucesso!</b></label>";
-		}
-		else
-		{
-			echo "<label><b>NAO FOI CADASTRADO</b></label>";
-				
-		}
+	$livro->inserelivro($conexao);
 
 	mysqli_close($conexao);
 ?>

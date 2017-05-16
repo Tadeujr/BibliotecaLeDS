@@ -2,15 +2,15 @@
 	include("conecta.php");
 	include("funcoes_biblioteca.php");?>
 
-<form name="input" action="locacao.php" method="post">
+<form action="locacao.php" method="post">
 
 	<div class="title">
 		<h1>Locação</h1>
 	</div>
 
 	<div class="cont-L">
-		<label> Id do Usuário &nbsp&nbsp</label><br>
-		<label> Id do livro &nbsp&nbsp</label><br>
+		<label> Id do Usuário </label><br>
+		<label> Id do livro </label><br>
 	</div>
 
 	<div class="cont-R">
@@ -20,10 +20,11 @@
 
 	<div class="divBtn">
 		<button style="background-color:#006400" class="btn btn-primary divBtn" type="submit">Locar</button>
+		<?php include("indentificacao.php"); ?>
 	</div>
+	
 </form>
 
-<?php include("indentificacao.php"); ?>
 
 <?php 
 include ("rodape.php");?>

@@ -1,40 +1,8 @@
 <?php
-/*	1	nome
-	2	autor	
-	3	edicao	
-	4	editora*/
-
-function insereLivro($conexao,$nome,$autor,$editora)// função para add livros no banco
-{
-
-		$query = "insert into livro (titulo,autor,editora,situacao,locador) values('{$nome}','{$autor}','{$editora}','{0}', NULL)"; //comando para add no banco MYSQL 
-	
-	return mysqli_query($conexao,$query);
-}
-
-/*	1	nome	
-	2	livro	
-	3	locacao	
-	4	email*/
-
-function insereUser($conexao,$nome,$email)// função para add livros no banco
-{
-
-	$query = "insert into usuarios (nome,email) values('{$nome}','{$email}')"; //comando para add no banco MYSQL 
-		
-	return mysqli_query($conexao,$query);
-}
-
-function locarlivro($conexao, $livrox ,$idlivro, $id_user)
-{
-	$query = "update usuarios set {$livrox} = {$idlivro} where id_user = {$id_user}";
-
-	 return mysqli_query($conexao, $query);
-}
 
 function situacao($conexao, $idlivro,$sit)
 {
-	$query = "update livros set situacao = {$sit} where id = {$idlivro}";
+	$query = "update livro set situacao = {$sit} where id_livro = {$idlivro}";
 	return mysqli_query($conexao, $query);
 }
 function devolver($conexao, $idlivro)
