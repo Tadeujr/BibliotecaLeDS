@@ -1,16 +1,13 @@
-<?php include ("cabecalho_adm.php");
-	include("conecta.php");
+<?php
+    include('cabecalho_adm.php');
+      require_once'Conecta.php';
 
 
-	$usuarios = array();
-	$resultado = mysqli_query($conexao, "select * from usuarios");
-		while($usuario = mysqli_fetch_assoc($resultado))
-		{
-			$usuarios[] = $usuario;
-		}
-
-		echo "<center><h2>USUARIOS CADASTRADOS</center></h2><br>";
-
+	$usuarios = new Conecta();
+	
+          echo "<br><br><br>";
+        echo "<center><h2>USUARIOS CADASTRADOS</center></h2><br>";
+        $lista = $usuarios->listaUsuarios();
 
 ?>
 
@@ -21,7 +18,7 @@
 
 	</tr>	
 		<?php 
-		foreach ($usuarios as $usuario){
+		foreach ($lista as $usuario){
 		?>	
 
 	<tr>
@@ -30,6 +27,7 @@
 	</tr>
 		<?php }?>
 </center></table>
-
-
 <?include ("rodape.php");?>
+    
+
+

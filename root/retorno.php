@@ -1,12 +1,10 @@
 <?php
-	include ("conecta.php");
-	require_once 'livroClass.php';
+	require_once 'Padawan.php';
 
-	$livro = new Livro;
+	$livro = new Padawan;
 	if(isset($_POST['idlivro'])){
-		$livro->id_livro = $_POST['idlivro'];
 
-		$livro->devolverlivro($conexao, $livro->id_livro);
+		$livro->devolverlivro($_POST['idlivro']);
 	}
 
 ?>

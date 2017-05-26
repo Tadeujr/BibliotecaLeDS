@@ -1,16 +1,15 @@
-<?php 
-include ("conecta.php");
-include("funcoes_biblioteca.php");
-require_once 'livroClass.php';
-?>
+<?php
+require_once 'Jedi.php';
+$livro = new Jedi();
+$titulo = $_POST['titulo'];
+$autor = $_POST['autor'];
+$editora = $_POST['editora']; 
 
-<?php 
-	$livro = new Livro;
-	$livro->titulo = $_POST['nome'];
-	$livro->autor = $_POST['autor'];
-	$livro->editora = $_POST['editora']; 
+$livro->addLivro($titulo,$editora,$autor);
 
-	$livro->inserelivro($conexao);
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-	mysqli_close($conexao);
-?>

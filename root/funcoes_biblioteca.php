@@ -61,23 +61,3 @@ function if_locado($locado)
 		return "Disponível";
 	}
 }
-
-function filllivro($conexao, $id_user)
-{
-	$array = array();
-	$select = "select * from usuarios where id_user = {$id_user}";
-		
-	$result = mysqli_query($conexao, $select);
-
-	$linha = mysqli_fetch_assoc($result);
-
-	if(is_null($linha['livro1'])){
-		return "livro1";
-	}
-	else if(is_null($linha['livro2'])){
-		return "livro2";
-	}
-	else{
-		return "";
-	}
-}

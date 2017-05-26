@@ -5,13 +5,13 @@
 </div>
 	<form name="input" action="cadastrarlivro.php" method="post">
 		<div class="cont-L">
-			<label class="title-form">Nome </label><br>
+			<label class="title-form">Titulo </label><br>
 			<label class="title-form">Autor </label><br>
 			<label class="title-form"> Editora </label><br>
 		</div>
 
 		<div class="cont-R">
-			<input type="text" name="nome"><br>
+			<input type="text" name="titulo"><br>
 			<input type="text" name="autor"><br>
 			<input type="text" name="editora">
 		</div>
@@ -20,4 +20,4 @@
     </div>
 </form>
 
-<?php include ("rodape.php");?>
+<?php include ("rodape.php");

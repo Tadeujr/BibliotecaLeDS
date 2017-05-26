@@ -8,15 +8,17 @@
 		<div class="cont-L">
 			<label class="title-form">Nome </label><br>
 			<label class="title-form">Email </label><br>
+                        <label class="title-form">Matricula </label><br>
 		</div>
 
 		<div class="cont-R">
 			<input type="text" name="nome"><br>
 			<input type="email" name="email"><br>
+                        <input type="text" name="mat"><br>
 		</div>
 		</div>
 	<div class="divBtnAdm">
     	<button  style="background-color:#006400" class="btn btn-primary" type="submit">Cadastrar</button>
     </div>
 </form>
-<?php include ("rodape.php");?>
+<?php include ("rodape.php"); 

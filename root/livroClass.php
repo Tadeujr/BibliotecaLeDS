@@ -1,9 +1,9 @@
 <?php
 class Livro{
-	var $id_livro;
-	var $titulo;
-	var $autor;
-	var $editora;
+	public $id_livro;
+	public $titulo;
+	public $autor;
+	public $editora;
 
 	function inserelivro($conexao)
 	{

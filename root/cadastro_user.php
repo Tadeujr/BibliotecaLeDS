@@ -1,14 +1,17 @@
 <?php
+require_once'Conecta.php';
+require_once'Pessoa.php';
 
-include("conecta.php");
-require_once 'usuarioClass.php';
-$user = new Pessoa;
+$banco = new Conecta();
+$pessoa = new Pessoa();
 
-$user->nome = $_POST['nome'];
-$user->email = $_POST['email'];
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$mat = $_POST['mat'];
 
-$user->inserirusuario($conexao);
-	
+$pessoa->setNome($nome);
+$pessoa->setEmail($email);
+$pessoa->setMatricula($mat);
 
-mysqli_close($conexao);	
-?>
+
+$banco ->addPessoa($pessoa->getNome(), $pessoa->getMatricula(), $pessoa->getEmail());

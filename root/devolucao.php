@@ -1,6 +1,4 @@
-<?php include ("cabecalho.php");
-	include("conecta.php");
-	include("funcoes_biblioteca.php");?>
+<?php include ("cabecalho.php");?>
 
 <form name="input" action="devolucao.php" method="post">
 
