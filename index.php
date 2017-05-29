@@ -20,7 +20,6 @@
                 <td><b> Autor</b></td>
                 <td><b> Editora</b></td>
                 <td><b> Situação</b></td>
-                <td><b> Locador</b></td>
         </tr>	
         <?php 
         $lista = $livros->listaLivros();
@@ -35,7 +34,6 @@
                         <td>{$livro['autor']}</td>
                         <td>{$livro['editora']}</td>
                         <td>".$livros->if_locado($livro['situacao'])."</td>
-                        <td>".$livros->nome_locador($livro['fk_locador'])."</td>
                         
                 </tr>";
         }  

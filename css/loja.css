@@ -41,3 +41,10 @@
 	left: 45%;
 
 }
+.tabela{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+
+    left: 20%;
+}

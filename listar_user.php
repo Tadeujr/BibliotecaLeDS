@@ -12,20 +12,23 @@
 ?>
 
 <center><table width="800" class = "table-striped table-bordered">
-	<tr>
+	<tr>    
+                <td><b> Matrícula </b></td>
 		<td><b> Usuário<b></td>
 		<td><b> Email</b></td>
 
 	</tr>	
-		<?php 
+            <?php 
 		foreach ($lista as $usuario){
-		?>	
+			
 
-	<tr>
-			<td><?=$usuario['nome'];?></td>
-			<td><?=$usuario['email'];?></td>
-	</tr>
-		<?php }?>
+                        echo"<tr>
+                            <td>{$usuario['matricula']}</td>
+                            <td>{$usuario['nome']}</td>
+                            <td>{$usuario['email']}</td>
+                        </tr>";
+                }
+            ?>
 </center></table>
 <?include ("rodape.php");?>
     

@@ -3,7 +3,7 @@
  ?>
 
 <center><div class="title">
-	<h1>Login</h1>
+	<h1>Olá Jedi, use a força!</h1>
     </div>
     <form name="input" action="confirmacao.php" method="post">
 		<div class="cont-L">
@@ -16,7 +16,7 @@
 			<input type="password" name="senha">
 		</div>
 	<div class="divBtnAdm">
-    	<button  style="background-color:#006400" class="btn btn-primary" type="submit">login</button>
+    	<button  style="background-color:#006400" class="btn btn-primary" type="submit">Login</button>
     </div></center>
 </form>
 <?php 

@@ -62,14 +62,21 @@ class Padawan extends Conecta{
 
 		while($linha = mysqli_fetch_assoc($result))
 		{
+                        $flag = 0;
+                        //print_r($linha);
 			if($idlivro == $linha['livro1'] ){
 				$book = "livro1";
+                                $flag  = 1;
 			}
 			else if($idlivro == $linha['livro2']){
 				$book = "livro2";
+                                $flag = 1;
 			}
-			$query = "update usuarios set {$book} = NULL where matricula = {$linha['matricula']}";
-			return mysqli_query($this->conexao, $query);
+                        if($flag){
+                            $query = "update usuarios set {$book} = NULL where matricula = {$linha['matricula']}";
+                            return mysqli_query($this->conexao, $query);
+                        }
+			
 		}
 	}
 

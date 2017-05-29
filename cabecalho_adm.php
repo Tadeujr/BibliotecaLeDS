@@ -12,6 +12,9 @@
     			<div class="navbar-header">
     		<a style="color:#F8F8FF;" class="navbar-brand" href="listar_user.php"> Usuários Cadastrados</a>
     		</div>
+                <ul class="navbar navbar-brand">
+                    <a style="color:#F8F8FF;" href="listarlocadores.php">Locadores</a>
+                </ul>     
     		<div>
     			<ul class="navbar navbar-brand">
     				<a style="color:#F8F8FF;" href="formulario_user.php">Cadastrar Usuário</a>

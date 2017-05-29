@@ -72,27 +72,21 @@ class Conecta {
         }
     }
     
-    private function listarLocadores(){
+    public function listarLocadores(){
         
-        $resultado = mysqli_query($this->conexao,'SELECT usuarios.nome from usuarios INNER join livros on (livros.fk_locador = usuarios.matricula)');
-        return mysqli_fetch_assoc($resultado);
+        $resultado = mysqli_query($this->conexao,'SELECT * from usuarios INNER join livros on (livros.fk_locador = usuarios.matricula)');
+        $pessoas = [];
+        
+        while($pessoa = mysqli_fetch_assoc($resultado)){
+            
+            array_push($pessoas, $pessoa);
+           
+        }
+        
+        return $pessoas;
         
     }
     
-    public function nome_locador($fk_locador)
-    {
-        
-        if($fk_locador == NULL)
-        {
-            return "Não locado";
-        }
-        else
-        {
-            $locador = $this->listarLocadores();
-            print_r($locador);
-            return $locador['nome'];
-        }
-    }
     
 
 }

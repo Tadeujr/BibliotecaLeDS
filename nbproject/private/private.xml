@@ -6,13 +6,24 @@
             <file>file:/C:/xampp/htdocs/biblioteca/listar_user.php</file>
             <file>file:/C:/xampp/htdocs/biblioteca/cadastro_user.php</file>
             <file>file:/C:/xampp/htdocs/biblioteca/locacao.php</file>
-            <file>file:/C:/xampp/htdocs/biblioteca/formulario.php</file>
-            <file>file:/C:/xampp/htdocs/biblioteca/Conecta.php</file>
-            <file>file:/C:/xampp/htdocs/biblioteca/index.php</file>
-            <file>file:/C:/xampp/htdocs/biblioteca/formulario_user.php</file>
             <file>file:/C:/xampp/htdocs/biblioteca/Pessoa.php</file>
-            <file>file:/C:/xampp/htdocs/biblioteca/Livro.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/cadastrarlivro.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/rodape.php</file>
             <file>file:/C:/xampp/htdocs/biblioteca/Jedi.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/conecta.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/indentificacao.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/formulario.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/cabecalho.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/confirmacao.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/index.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/retorno.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/formulario_user.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/cabecalho_adm.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/Livro.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/telalogin.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/Padawan.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/devolucao.php</file>
+            <file>file:/C:/xampp/htdocs/biblioteca/listarlocadores.php</file>
         </group>
     </open-files>
 </project-private>
