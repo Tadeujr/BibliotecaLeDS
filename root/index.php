@@ -20,11 +20,10 @@
                 <td><b> Autor</b></td>
                 <td><b> Editora</b></td>
                 <td><b> Situação</b></td>
-                <td><b> Locador</b></td>
         </tr>	
         <?php 
         $lista = $livros->listaLivros();
-                //print_r($livros);
+               
        echo "<br><br><br>";
        
        echo "<h1>Lista de Livros</h1>";
@@ -35,11 +34,10 @@
                         <td>{$livro['autor']}</td>
                         <td>{$livro['editora']}</td>
                         <td>".$livros->if_locado($livro['situacao'])."</td>
-                        <td>".$livros->nome_locador($livro['fk_locador'])."</td>
                         
                 </tr>";
         }  
-        //<td>".if_locado($banco['situacao'])."</td>    
+       
         ?>
     </center></table>
 

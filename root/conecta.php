@@ -16,13 +16,13 @@ class Conecta {
            
    
     function __construct() {
-        $this->conexao = mysqli_connect('localhost','root','','biblioteca');
+        $this->conexao = mysqli_connect('localhost','root','usbw','biblioteca');
     }
     
     
     public function listaLivros(){
         
-        $resultado = mysqli_query($this->conexao, "select * from livros");
+        $resultado = mysqli_query($this->conexao, "select * from livro");
         $livros = [];
         
         
@@ -36,7 +36,7 @@ class Conecta {
     }
     
     public function listaUsuarios() {
-        $resultado = mysqli_query($this->conexao,"select * from usuarios");
+        $resultado = mysqli_query($this->conexao,"select * from usuario");
         $usuarios = [];
         
         while($usuario = mysqli_fetch_assoc($resultado)){
@@ -50,10 +50,10 @@ class Conecta {
     
     public function addPessoa($n,$m,$e){
        
-        if(mysqli_query($this->conexao,"insert into usuarios (nome,email,matricula) values('{$n}','{$e}',{$m})"))
+        if(mysqli_query($this->conexao,"insert into usuario (nome,email,matricula) values('{$n}','{$e}',{$m})"))
 		{
 			echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=formulario.php'>";
-			echo "<label><b>Livro cadastrado com Sucesso!</b></label>";
+			echo "<label><b>Usuário cadastrado com Sucesso!</b></label>";
 
 		}else{
 			echo "Erro no cadastro, por favor verifique os campos";
@@ -72,27 +72,21 @@ class Conecta {
         }
     }
     
-    private function listarLocadores(){
+    public function listarLocadores(){
         
-        $resultado = mysqli_query($this->conexao,'SELECT usuarios.nome from usuarios INNER join livros on (livros.fk_locador = usuarios.matricula)');
-        return mysqli_fetch_assoc($resultado);
+        $resultado = mysqli_query($this->conexao,"select * from usuario INNER join livro on (livro.fk_locador = usuario.matricula)");
+        $pessoas = [];
+        
+        while($pessoa = mysqli_fetch_assoc($resultado)){
+            
+            array_push($pessoas, $pessoa);
+           
+        }
+        
+        return $pessoas;
         
     }
     
-    public function nome_locador($fk_locador)
-    {
-        
-        if($fk_locador == NULL)
-        {
-            return "Não locado";
-        }
-        else
-        {
-            $locador = $this->listarLocadores();
-            print_r($locador);
-            return $locador['nome'];
-        }
-    }
     
 
 }

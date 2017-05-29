@@ -1,4 +1,5 @@
-<?php include ("cabecalho.php");?>
+<?php include ("cabecalho.php");
+?>
 
 <form name="input" action="devolucao.php" method="post">
 

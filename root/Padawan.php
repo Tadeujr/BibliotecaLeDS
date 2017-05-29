@@ -18,9 +18,9 @@ class Padawan extends Conecta{
     public function locarLivro($matricula,$livrox, $idlivro)
     {
 		if($livrox != ""){
-			if( mysqli_query($this->conexao,"update usuarios set {$livrox} = {$idlivro} where matricula = ".$matricula."")){
-				mysqli_query($this->conexao, "update livros set situacao = 1 where id_livro = {$idlivro}");
-                                mysqli_query($this->conexao, "update livros set fk_locador = {$matricula} where id_livro = {$idlivro}");
+			if( mysqli_query($this->conexao,"update usuario set {$livrox} = {$idlivro} where matricula = ".$matricula."")){
+				mysqli_query($this->conexao, "update livro set situacao = 1 where id_livro = {$idlivro}");
+                                mysqli_query($this->conexao, "update livro set fk_locador = {$matricula} where id_livro = {$idlivro}");
 				
                                 echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=locacao.php'>";
 				echo "<label class='divBtnMessage'><b>OPERAÇÃO FEITA COM SUCESSO</b></label>";
@@ -38,7 +38,7 @@ class Padawan extends Conecta{
 	public function filllivro($matricula)
 	{
 		$array = array();
-		$select = "select * from usuarios where matricula = {$matricula}";
+		$select = "select * from usuario where matricula = {$matricula}";
 			
 		$result = mysqli_query($this->conexao, $select);
 
@@ -57,27 +57,34 @@ class Padawan extends Conecta{
 
 	public function findBook($idlivro)
 	{
-		$select = "select * from usuarios";
+		$select = "select * from usuario";
 		$result = mysqli_query($this->conexao, $select);
 
 		while($linha = mysqli_fetch_assoc($result))
 		{
+                        $flag = 0;
+                        //print_r($linha);
 			if($idlivro == $linha['livro1'] ){
 				$book = "livro1";
+                                $flag  = 1;
 			}
 			else if($idlivro == $linha['livro2']){
 				$book = "livro2";
+                                $flag = 1;
 			}
-			$query = "update usuarios set {$book} = NULL where matricula = {$linha['matricula']}";
-			return mysqli_query($this->conexao, $query);
+                        if($flag){
+                            $query = "update usuario set {$book} = NULL where matricula = {$linha['matricula']}";
+                            return mysqli_query($this->conexao, $query);
+                        }
+			
 		}
 	}
 
 	public function devolverlivro($idlivro)
 	{
 		if($this->findBook($idlivro)){
-			mysqli_query($this->conexao, "update livros set situacao = 0 where id_livro = {$idlivro}");
-                        mysqli_query($this->conexao, "update livros set fk_locador = NULL where id_livro = {$idlivro}");
+			mysqli_query($this->conexao, "update livro set situacao = 0 where id_livro = {$idlivro}");
+                        mysqli_query($this->conexao, "update livro set fk_locador = NULL where id_livro = {$idlivro}");
 			echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=devolucao.php'>";
 			echo "<label class='divBtnMessage'><b>OPERAÇÃO FEITA COM SUCESSO</b></label>";
 		}

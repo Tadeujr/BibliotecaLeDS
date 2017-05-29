@@ -17,10 +17,10 @@ class Jedi extends Conecta{
     
 function addLivro($t,$e,$a){
         
-    if(mysqli_query($this->conexao,"insert into livros (titulo,editora,autor) values('{$t}','{$e}','{$a}')"))
+    if(mysqli_query($this->conexao,"insert into livro (titulo,editora,autor) values('{$t}','{$e}','{$a}')"))
         {
             echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=formulario_user.php'>";
-            echo "<label><b>Usuario cadastrado com Sucesso!</b></label>";
+            echo "<label><b>Livro cadastrado com Sucesso!</b></label>";
 
     }else{
             echo "Erro no cadastro, por favor verifique os campos";
@@ -28,7 +28,7 @@ function addLivro($t,$e,$a){
     }
    
     public function verificar_adm($matricula, $senha){
-        $result = mysqli_query($this->conexao, "select * from usuarios where matricula = {$matricula}");
+        $result = mysqli_query($this->conexao, "select * from usuario where matricula = {$matricula}");
         $adm = mysqli_fetch_assoc($result);
         if($adm['adm']){
             if($senha == $adm['senha_adm']){
