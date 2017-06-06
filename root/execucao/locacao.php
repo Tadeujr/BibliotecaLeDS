@@ -1,5 +1,5 @@
-<?php include ("cabecalho.php");
-	include("conecta.php");
+<?php include ("../view/cabecalho.php");
+	include("../class/conecta.php");
 	?>
 
 <form action="locacao.php" method="post">
@@ -27,5 +27,5 @@
 
 
 <?php 
-include ("rodape.php");?>
+include ("../view/rodape.php");?>
 

@@ -1,6 +1,6 @@
 <?php
-    include('cabecalho_adm.php');
-      require_once'Conecta.php';
+    include('../view/cabecalho_adm.php');
+      require_once'../class/Conecta.php';
 
 
 	$usuarios = new Conecta();
@@ -30,7 +30,7 @@
                 }
             ?>
 </center></table>
-<?include ("rodape.php");?>
+<?include ("../view/rodape.php");?>
     
 
 

@@ -1,4 +1,4 @@
-<?php include ("cabecalho.php");
+<?php include ('../view/cabecalho.php');
 ?>
 
 <form name="input" action="devolucao.php" method="post">
@@ -17,11 +17,11 @@
 
 	<div class="divBtn adm">
 		<button style="background-color:#006400" class="btn btn-primary divBtn" type="submit">Devolver</button>
-		<?php include("retorno.php"); ?>
+		<?php include("../execucao/retorno.php"); ?>
 	</div>
 </form>
 
 
 <?php 
-include ("rodape.php");?>
+include ("../view/rodape.php");?>
 

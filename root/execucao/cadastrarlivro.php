@@ -1,5 +1,5 @@
 <?php
-require_once 'Jedi.php';
+require_once '../class/Jedi.php';
 $livro = new Jedi();
 $titulo = $_POST['titulo'];
 $autor = $_POST['autor'];

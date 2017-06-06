@@ -1,11 +1,11 @@
 <?php
-    include'cabecalho.php';
+    include'../view/cabecalho.php';
  ?>
 
 <center><div class="title">
 	<h1>Olá Jedi, use a força!</h1>
     </div>
-    <form name="input" action="confirmacao.php" method="post">
+    <form name="input" action="../execucao/confirmacao.php" method="post">
 		<div class="cont-L">
 			<label class="title-form">Matricula </label><br>
 			<label class="title-form">Senha </label><br>
@@ -20,7 +20,7 @@
     </div></center>
 </form>
 <?php 
-include 'confirmacao.php';
-include'rodape.php';?>
+include '../execucao/confirmacao.php';
+include'../view/rodape.php';?>
 
 

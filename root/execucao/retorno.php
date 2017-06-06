@@ -1,5 +1,5 @@
 <?php
-	require_once 'Padawan.php';
+	require_once '../class/Padawan.php';
 
 	$livro = new Padawan;
 	if(isset($_POST['idlivro'])){

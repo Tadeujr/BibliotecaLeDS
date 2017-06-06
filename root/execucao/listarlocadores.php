@@ -5,8 +5,8 @@
             <title></title>
         </head>
  <body>
-<?php include"cabecalho_adm.php";
- require_once 'conecta.php';
+<?php include"../view/cabecalho_adm.php";
+ require_once '../class/conecta.php';
  
  $locador = new Conecta();
  	
@@ -41,7 +41,7 @@
     </center></table>
 
 
-<?include ("rodape.php");?>
+<?include ("../view/rodape.php");?>
     </body>
 </html> 
 

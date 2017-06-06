@@ -6,8 +6,8 @@
         </head>
     <body>
         <?php
-           include ("cabecalho.php");
-           require_once'Conecta.php';
+           include ('view/cabecalho.php');
+           require_once'class/Conecta.php';
           $livros = new Conecta();
          
           
@@ -42,6 +42,6 @@
     </center></table>
 
 
-<?include ("rodape.php");?>
+<?include ("view/rodape.php");?>
     </body>
 </html>

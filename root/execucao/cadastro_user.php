@@ -1,6 +1,6 @@
 <?php
-require_once'Conecta.php';
-require_once'Pessoa.php';
+require_once'../class/Conecta.php';
+require_once'../class/Pessoa.php';
 
 $banco = new Conecta();
 $pessoa = new Pessoa();

@@ -1,4 +1,4 @@
-<?php include ("cabecalho_adm.php");?>
+<?php include ("../view/cabecalho_adm.php");?>
 
 <div class="title">
 	<h1>Cadastro de Livro</h1>
